@@ -11,9 +11,11 @@ const server =
 
       res.write('<html> <head> <title> Served </title> </head>')
       res.write('<body>')
-      res.write('Content \n')
-      res.write('More content \n')
-      res.write('Hello World')    
+      
+      res.write('<table><tr><th> Location </th><th> Hours required </th><th> Money required </th></tr>') 
+      res.write('<tr><td> TajMahal </td><td> 2hours </td><td> 4000RS </td></tr>')
+      res.write('<tr><td>charminar</td><td>3hours</td><td>3000RS</td></tr><tr><td>Golconda fort</td><td>3hours</td><td>2000RS</td></tr>')
+      res.write('<tr><td>falaknuma palace</td><td>2hours</td><td>2500Rs</td></tr></table>')
       res.end('</body></html>')
       //Close the response
     }                           
